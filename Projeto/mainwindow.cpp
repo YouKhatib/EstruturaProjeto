@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "registro.h"
+#include "adm.h"
 #include <QFile>
 #include <QMessageBox>
 #include <fstream>
@@ -43,6 +44,12 @@ void MainWindow::on_logIn_clicked()
         int l = 0;
         std::string busca = ui->usuario->text().toStdString();
         std::string buscaS = ui->senha->text().toStdString();
+        if(busca == "adm"&& buscaS == "123"){
+            adm janelaAdm;
+            janelaAdm.setModal(true);
+            janelaAdm.exec();
+            return;
+        }
         for(l; busca != user[l] && l < user->size(); l){
             l++;
         }

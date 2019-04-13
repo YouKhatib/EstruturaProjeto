@@ -19,7 +19,7 @@ public:
 private slots:
     void on_logIn_clicked();
 
-    void on_logIn_clicked(bool checked);
+
 
     void on_registrar_clicked();
 

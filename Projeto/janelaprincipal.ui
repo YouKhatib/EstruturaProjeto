@@ -16,9 +16,9 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>130</y>
-     <width>91</width>
+     <x>120</x>
+     <y>120</y>
+     <width>141</width>
      <height>23</height>
     </rect>
    </property>
@@ -29,9 +29,9 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>180</y>
-     <width>91</width>
+     <x>120</x>
+     <y>160</y>
+     <width>141</width>
      <height>23</height>
     </rect>
    </property>
@@ -42,14 +42,27 @@
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>120</x>
      <y>240</y>
-     <width>91</width>
+     <width>141</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
     <string>Sair</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>200</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Serviço de quarto</string>
    </property>
   </widget>
  </widget>

@@ -3,6 +3,7 @@
 #include "mainwindow.h"
 #include "quartos.h"
 #include "cardapio.h"
+#include "servico.h"
 
 
 JanelaPrincipal::JanelaPrincipal(QWidget *parent) :
@@ -34,4 +35,12 @@ void JanelaPrincipal::on_pushButton_2_clicked()
     Cardapio cardapio;
     cardapio.setModal(true);
     cardapio.exec();
+}
+
+void JanelaPrincipal::on_pushButton_4_clicked()
+{
+    Servico serQuarto;
+    serQuarto.setModal(true);
+    serQuarto.exec();
+
 }

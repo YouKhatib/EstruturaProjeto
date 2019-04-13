@@ -30,21 +30,27 @@ SOURCES += \
     janelaprincipal.cpp \
     quartos.cpp \
     cardapio.cpp \
-    registro.cpp
+    registro.cpp \
+    adm.cpp \
+    servico.cpp
 
 HEADERS += \
         mainwindow.h \
     janelaprincipal.h \
     quartos.h \
     cardapio.h \
-    registro.h
+    registro.h \
+    adm.h \
+    servico.h
 
 FORMS += \
         mainwindow.ui \
     janelaprincipal.ui \
     quartos.ui \
     cardapio.ui \
-    registro.ui
+    registro.ui \
+    adm.ui \
+    servico.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
