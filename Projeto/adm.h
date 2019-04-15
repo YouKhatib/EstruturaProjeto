@@ -15,6 +15,11 @@ public:
     explicit adm(QWidget *parent = nullptr);
     ~adm();
 
+private slots:
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::adm *ui;
 };

@@ -32,7 +32,8 @@ SOURCES += \
     cardapio.cpp \
     registro.cpp \
     adm.cpp \
-    servico.cpp
+    servico.cpp \
+    mudarcardapio.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -41,7 +42,8 @@ HEADERS += \
     cardapio.h \
     registro.h \
     adm.h \
-    servico.h
+    servico.h \
+    mudarcardapio.h
 
 FORMS += \
         mainwindow.ui \
@@ -50,7 +52,8 @@ FORMS += \
     cardapio.ui \
     registro.ui \
     adm.ui \
-    servico.ui
+    servico.ui \
+    mudarcardapio.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
