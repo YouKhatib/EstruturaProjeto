@@ -43,7 +43,8 @@ HEADERS += \
     registro.h \
     adm.h \
     servico.h \
-    mudarcardapio.h
+    mudarcardapio.h \
+    lde.h
 
 FORMS += \
         mainwindow.ui \
