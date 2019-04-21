@@ -2,6 +2,7 @@
 #define MUDARCARDAPIO_H
 
 #include <QDialog>
+#include "lde.h"
 
 namespace Ui {
 class mudarCardapio;
@@ -24,8 +25,12 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+
 private:
     Ui::mudarCardapio *ui;
+
+public:
+    lde getObj();
 };
 
 #endif // MUDARCARDAPIO_H

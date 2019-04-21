@@ -1,9 +1,8 @@
 #include "mudarcardapio.h"
 #include "ui_mudarcardapio.h"
-#include "lde.h"
 #include <QMessageBox>
 
-lde obj;
+lde obj, *atual;
 mudarCardapio::mudarCardapio(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::mudarCardapio)
@@ -16,6 +15,7 @@ mudarCardapio::~mudarCardapio()
     delete ui;
 }
 
+
 void mudarCardapio::on_pushButton_clicked()
 {
     std::string nome = ui->lineEdit_2->text().toStdString();
@@ -26,7 +26,7 @@ void mudarCardapio::on_pushButton_clicked()
 void mudarCardapio::on_pushButton_2_clicked()
 {
     std::string nome = ui->lineEdit->text().toStdString();
-    if(obj.remove(nome) == NULL){
+    if(obj.remove(nome) == false){
         QMessageBox::warning(this,"ERRO","Prato não encontrado");
         return;
     }
@@ -34,16 +34,23 @@ void mudarCardapio::on_pushButton_2_clicked()
 }
 void mudarCardapio::on_pushButton_3_clicked()
 {
-    lde* atual = obj.getPrimeiro(obj);
-
-    //while(atual){
-        QString qstr =QString::fromStdString(atual->getNome());
-        ui->textBrowser->setText(qstr);
-        //atual = atual->proximo;
-    //}
+    ui->textBrowser->setText("");
+    if(!atual){
+        atual = obj.primeiro;
+    }
+    while(atual){
+        QString nome =QString::fromStdString(atual->nome);
+        QString preco = QString::number(atual->val);
+        ui->textBrowser->append("nome: " + nome + " preço: " + preco + " R$");
+        atual = atual->proximo;
+    }
 }
 
 void mudarCardapio::on_pushButton_4_clicked()
 {
     this->close();
+}
+
+lde mudarCardapio::getObj(){
+    return obj;
 }

@@ -51,9 +51,12 @@ public:
          lde *atual = primeiro;
          lde *anterior = NULL;
          int i;
-         while(atual->nome != idx) {
+         while(atual && atual->nome != idx) {
              anterior = atual;
              atual = atual->proximo;
+         }
+         if(!atual){
+             return false;
          }
          if (atual->proximo == NULL && atual->nome != idx){
              return false;
@@ -72,6 +75,8 @@ public:
     std::string getNome(){
         this->nome;
     }
+
+
 
     virtual ~lde() {
         lde *atual = primeiro, *prox = NULL;

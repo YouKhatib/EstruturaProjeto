@@ -1,7 +1,5 @@
 #include "cardapio.h"
 #include "ui_cardapio.h"
-#include "lde.h"
-#include "mudarcardapio.h"
 
 Cardapio::Cardapio(QWidget *parent) :
     QDialog(parent),
@@ -18,4 +16,9 @@ Cardapio::~Cardapio()
 void Cardapio::on_pushButton_clicked()
 {
     this->close();
+}
+
+void Cardapio::on_pushButton_2_clicked()
+{
+
 }

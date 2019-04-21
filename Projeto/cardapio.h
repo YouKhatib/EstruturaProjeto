@@ -2,6 +2,8 @@
 #define CARDAPIO_H
 
 #include <QDialog>
+#include "lde.h"
+#include "mudarcardapio.h"
 
 namespace Ui {
 class Cardapio;
@@ -18,8 +20,11 @@ public:
 private slots:
     void on_pushButton_clicked();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::Cardapio *ui;
+    lde* recente;
 };
 
 #endif // CARDAPIO_H
