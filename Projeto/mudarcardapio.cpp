@@ -8,6 +8,16 @@ mudarCardapio::mudarCardapio(QWidget *parent) :
     ui(new Ui::mudarCardapio)
 {
     ui->setupUi(this);
+
+    if(obj.getN() == 0){
+        obj.insere(16.00, "teste 0");
+        obj.insere(17.00, "teste 1");
+        obj.insere(12.00, "teste 2");
+        obj.insere(10.00, "teste 3");
+        obj.insere(19.00, "teste 4");
+        obj.insere(5.00, "teste 5");
+    }
+
 }
 
 mudarCardapio::~mudarCardapio()

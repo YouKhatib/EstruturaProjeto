@@ -72,6 +72,11 @@ public:
     lde* getPrimeiro(lde a){
         return a.primeiro;
     }
+
+    int getN(){
+        return n;
+    }
+
     std::string getNome(){
         this->nome;
     }

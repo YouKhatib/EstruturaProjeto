@@ -36,6 +36,7 @@ SOURCES += \
     mudarcardapio.cpp
 
 HEADERS += \
+    hash.h \
         mainwindow.h \
     janelaprincipal.h \
     quartos.h \

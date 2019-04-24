@@ -7,8 +7,7 @@ Cardapio::Cardapio(QWidget *parent) :
     ui(new Ui::Cardapio)
 {
     ui->setupUi(this);
-     mudarCardapio a;
-     objeto = a.getObj();
+
 }
 
 Cardapio::~Cardapio()
@@ -25,14 +24,16 @@ void Cardapio::on_pushButton_2_clicked()
 {
 
     ui->textBrowser->setText("");
-    //if(!recente){
-        recente = objeto.primeiro;
-    //}
-    for(int i = 0; i < objeto.n - 1; i++){
+    if(!recente){
+        mudarCardapio a;
+        objeto = a.getObj();
+    }
+    recente = objeto.primeiro;
+    //for(int i = 0; i < objeto.n - 1; i++){
         QString nome = QString::fromStdString(recente->nome);
         QString preco = QString::number(recente->val);
         ui->textBrowser->append(nome + " | " + preco + " R$");
         recente = recente->proximo;
-    }
+    //}
 
 }
