@@ -75,6 +75,9 @@ public:
     std::string getNome(){
         this->nome;
     }
+    double getVal(){
+        return val;
+    }
 
 
 

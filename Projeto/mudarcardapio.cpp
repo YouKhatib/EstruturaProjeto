@@ -35,13 +35,13 @@ void mudarCardapio::on_pushButton_2_clicked()
 void mudarCardapio::on_pushButton_3_clicked()
 {
     ui->textBrowser->setText("");
-    if(!atual){
-        atual = obj.primeiro;
-    }
+    //if(!atual){
+    //}
+    atual = obj.primeiro;
     while(atual){
-        QString nome =QString::fromStdString(atual->nome);
+        QString nome = QString::fromStdString(atual->nome);
         QString preco = QString::number(atual->val);
-        ui->textBrowser->append("nome: " + nome + " preço: " + preco + " R$");
+        ui->textBrowser->append(nome + " | " + preco + " R$");
         atual = atual->proximo;
     }
 }

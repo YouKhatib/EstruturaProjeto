@@ -24,7 +24,7 @@ private slots:
 
 private:
     Ui::Cardapio *ui;
-    lde* recente;
+    mudarCardapio a;
 };
 
 #endif // CARDAPIO_H
