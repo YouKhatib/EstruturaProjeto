@@ -60,5 +60,6 @@ void Registro::on_pushButton_2_clicked()
     arquivoSenha.flush();
     arquivoSenha.close();
     QMessageBox::warning(this,"Registro","Registro concluido com sucesso.");
+
 }
 
