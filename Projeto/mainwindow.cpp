@@ -50,10 +50,6 @@ void MainWindow::on_logIn_clicked()
         QMessageBox::warning(this,"ERRO","Usuário ou senha incorretos");
         return;
     }
-  /*  if(busca != user[l] || buscaS != conteudoSenha[l]){
-        QMessageBox::warning(this,"ERRO","Usuário ou senha incorretos");
-        return;
-    }*/
     if(busca == user[l] && buscaS == conteudoSenha[l]){ //caso o usuario e a senha forem corretos abre a proxima página
         adm janelaAdm;
         janelaAdm.setModal(true);
