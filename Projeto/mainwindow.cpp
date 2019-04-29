@@ -45,13 +45,6 @@ void MainWindow::on_logIn_clicked()
 
     for(l; busca != user[l] && l < user->size(); l++);
 
-    if(busca == "adm" && buscaS == "123"){
-        adm janelaAdm;
-        janelaAdm.setModal(true);
-        janelaAdm.exec();
-        return;
-    }
-
     if(user[l] == "" && conteudoSenha[l] == ""){
         QMessageBox::warning(this,"ERRO","Usuário ou senha incorretos");
         return;
@@ -61,9 +54,9 @@ void MainWindow::on_logIn_clicked()
         return;
     }
     if(busca == user[l] && buscaS == conteudoSenha[l]){
-        JanelaPrincipal principal;
-        principal.setModal(true);
-        principal.exec();
+        adm janelaAdm;
+        janelaAdm.setModal(true);
+        janelaAdm.exec();
         return;
     }
 }
