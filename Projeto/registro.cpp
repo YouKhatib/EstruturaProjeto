@@ -29,12 +29,12 @@ void Registro::on_pushButton_clicked()
 void Registro::on_pushButton_2_clicked()
 {
 
-    if(ui->lineEdit_2->text() != ui->lineEdit_3->text()){
+    if(ui->lineEdit_2->text() != ui->lineEdit_3->text()){ //erro caso as senhas nos campos forem diferentes
         QMessageBox::warning(this,"ERRO","Senhas diferentes");
         return;
     }
     if(ui->lineEdit->text() == "" || ui->lineEdit_2->text() == "" || ui->lineEdit_3->text() == "" ||
-            ui->lineEdit_4->text() == "" || ui->lineEdit_5->text() == ""){
+            ui->lineEdit_4->text() == "" || ui->lineEdit_5->text() == ""){ //caso algum campo não tenha sido preenchido
         QMessageBox::warning(this,"ERRO","Complete todos os campos");
         return;
     }
@@ -44,7 +44,7 @@ void Registro::on_pushButton_2_clicked()
     }
     QTextStream saida(&arquivo);
     QString texto = ui->lineEdit->text();
-    saida << texto;
+    saida << texto; //método para escrever no arquivo
     saida << "\n";
     arquivo.flush();
     arquivo.close();
@@ -55,7 +55,7 @@ void Registro::on_pushButton_2_clicked()
         QMessageBox::warning(this,"ERRO","arquivo não aberto");
     }
     QString textoSenha = ui->lineEdit_2->text();
-    saidaSenha << textoSenha;
+    saidaSenha << textoSenha; //método para escrever no arquivo
     saidaSenha << "\n";
     arquivoSenha.flush();
     arquivoSenha.close();

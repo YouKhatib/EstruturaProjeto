@@ -25,7 +25,7 @@ void MainWindow::on_logIn_clicked()
     std::string linebuffer;
     std::string user[100];
     int i = 0;
-    while (usuario && getline(usuario, linebuffer)){
+    while (usuario && getline(usuario, linebuffer)){//lê o arquivo de usuario e armazena em user
         if (linebuffer.length() == 0)continue;
             user[i] = linebuffer;
             i++;
@@ -34,26 +34,27 @@ void MainWindow::on_logIn_clicked()
     std::string linha;
     std::string conteudoSenha[100];
     int p = 0;
-    while (senha && getline(senha, linha)){
+    while (senha && getline(senha, linha)){ //lê o arquivo de senha e armazena em conteudoSenha
         if (linha.length() == 0)continue;
             conteudoSenha[p] = linha;
             p++;
         }
     int l = 0;
-    std::string busca = ui->usuario->text().toStdString();
-    std::string buscaS = ui->senha->text().toStdString();
+    std::string busca = ui->usuario->text().toStdString(); //pega o usuario entrados pelo usuario
+    std::string buscaS = ui->senha->text().toStdString();  //pega a senha entrada pelo usuario
 
-    for(l; busca != user[l] && l < user->size(); l++);
+    for(l; busca != user[l] && l < user->size(); l++);//encontra a posição dos dados na array
 
-    if(user[l] == "" && conteudoSenha[l] == ""){
+    if(user[l] == "" && conteudoSenha[l] == "" || busca != user[l] ||
+            buscaS != conteudoSenha[l]){ //caso o usuário e a senha não serem encontrados
         QMessageBox::warning(this,"ERRO","Usuário ou senha incorretos");
         return;
     }
-    if(busca != user[l] || buscaS != conteudoSenha[l]){
+  /*  if(busca != user[l] || buscaS != conteudoSenha[l]){
         QMessageBox::warning(this,"ERRO","Usuário ou senha incorretos");
         return;
-    }
-    if(busca == user[l] && buscaS == conteudoSenha[l]){
+    }*/
+    if(busca == user[l] && buscaS == conteudoSenha[l]){ //caso o usuario e a senha forem corretos abre a proxima página
         adm janelaAdm;
         janelaAdm.setModal(true);
         janelaAdm.exec();

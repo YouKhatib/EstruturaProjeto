@@ -9,7 +9,7 @@ mudarCardapio::mudarCardapio(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    if(obj.getN() == 0){
+    if(obj.getN() == 0){ //Caso seja a primeira vez abrindo o programa, insere esses dados na lde
         obj.insere(16.00, "Omelete");
         obj.insere(10.00, "Pão com manteiga na chapa");
         obj.insere(12.50, "Ovo mexido");
@@ -31,31 +31,31 @@ mudarCardapio::~mudarCardapio()
 }
 
 
-void mudarCardapio::on_pushButton_clicked()
+void mudarCardapio::on_pushButton_clicked() // função para inserir um prato novo
 {
     std::string nome = ui->lineEdit_2->text().toStdString();
     double preco = ui->lineEdit_3->text().toDouble();
-    if(nome == ""){
-        QMessageBox::warning(this, "ERRO", "Insira o nome do prato");
+    if(nome == ""){ //caso nenhum nome seja escolhido
+        QMessageBox::warning(this, "ERRO", "Insira o nome do prato"); // função para abirir a janela de erro
         return;
     }
-    if(preco == 0){
-        QMessageBox::warning(this, "ERRO", "Insira um valor válido");
+    if(preco == 0){ // caso nenhum preço seja escolhido
+        QMessageBox::warning(this, "ERRO", "Insira um valor válido");// função para abirir a janela de erro
         return;
     }
     obj.insere(preco, nome);
 }
 
-void mudarCardapio::on_pushButton_2_clicked()
+void mudarCardapio::on_pushButton_2_clicked()//função para remover algum prato
 {
     std::string nome = ui->lineEdit->text().toStdString();
-    if(obj.remove(nome) == false){
+    if(obj.remove(nome) == false){ //caso o prato não seja encontrado, a janela de erro é aberta
         QMessageBox::warning(this,"ERRO","Prato não encontrado");
         return;
     }
 
 }
-void mudarCardapio::on_pushButton_3_clicked()
+void mudarCardapio::on_pushButton_3_clicked() //função para imprimir os pratos
 {
     ui->textBrowser->setText("");
     atual = obj.primeiro;
@@ -72,6 +72,4 @@ void mudarCardapio::on_pushButton_4_clicked()
     this->close();
 }
 
-lde mudarCardapio::getObj(){
-    return obj;
-}
+

@@ -3,7 +3,7 @@
 #include <string>
 
 
-
+//Classe LDE junto com a classe No.
 using namespace std;
 class lde{
 public:
@@ -20,7 +20,7 @@ public:
         val = 0;
         n = 0;
     }
-    void insere(double x, std::string name){
+    void insere(double x, std::string name){ //Método de inserir da LDE
         lde* novo = new lde;
         novo->val = x;
         novo->nome = name;
@@ -47,7 +47,7 @@ public:
         n++;
 
     }
-    bool remove(std::string idx) {
+    bool remove(std::string idx) { // método de remoção
          lde *atual = primeiro;
          lde *anterior = NULL;
          int i;
@@ -69,22 +69,10 @@ public:
          delete atual;
          return true;
      }
-    lde* getPrimeiro(lde a){
-        return a.primeiro;
-    }
 
     int getN(){
         return n;
     }
-
-    std::string getNome(){
-        this->nome;
-    }
-    double getVal(){
-        return val;
-    }
-
-
 
     virtual ~lde() {
         lde *atual = primeiro, *prox = NULL;

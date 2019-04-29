@@ -23,17 +23,4 @@ void Cardapio::on_pushButton_clicked()
 void Cardapio::on_pushButton_2_clicked()
 {
 
-    ui->textBrowser->setText("");
-    if(!recente){
-        mudarCardapio a;
-        objeto = a.getObj();
-    }
-    recente = objeto.primeiro;
-    while(recente){
-        QString nome = QString::fromStdString(recente->nome);
-        QString preco = QString::number(recente->val);
-        ui->textBrowser->append(nome + " | " + preco + " R$");
-        recente = recente->proximo;
-    }
-
 }
