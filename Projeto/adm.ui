@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Realizar checkout</string>
+    <string>Check in / Check out</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">

@@ -37,6 +37,7 @@ SOURCES += \
 
 HEADERS += \
     hash.h \
+    les.h \
         mainwindow.h \
     janelaprincipal.h \
     quartos.h \

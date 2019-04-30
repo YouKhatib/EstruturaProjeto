@@ -1,6 +1,8 @@
 #include "adm.h"
 #include "ui_adm.h"
 #include "mudarcardapio.h"
+#include "quartos.h"
+
 adm::adm(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::adm)
@@ -23,4 +25,11 @@ void adm::on_pushButton_2_clicked()
     mudarCardapio cardapio;
     cardapio.setModal(true);
     cardapio.exec();
+}
+
+void adm::on_pushButton_clicked()
+{
+    Quartos quartos;
+    quartos.setModal(true);
+    quartos.exec();
 }
