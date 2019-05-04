@@ -2,7 +2,7 @@
 #define PILHA_H
 
 #include <iostream>
-#define MAX 5
+#define MAX 50
 
 class PES{
 public:
@@ -24,18 +24,24 @@ public:
 
         if (x)
             *x = v[n];
-
+        v[n] = 0;
         return true;
     }
 
-    /**void print(){
-        for (int i = n-1; i >= 0; i--)
-            cout << v[i] << " ";
-        cout << endl;
-    }*/
+    int getN(){
+        return n;
+    }
+
+    int getV(int a){
+        return v[a];
+    }
 
     void limpa(){
         n = 0;
+    }
+
+    int getMAX(){
+        return MAX;
     }
 
 private:

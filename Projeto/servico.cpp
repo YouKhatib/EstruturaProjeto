@@ -142,5 +142,11 @@ void Servico::on_pushButton_3_clicked()
 
 void Servico::on_pushButton_4_clicked()                     //Desenfileira na ordem FIFO dos quartos chamados
 {
-    queue.desenfileira();
+    if(queue.desenfileira() == false){
+        QMessageBox::warning(this,"ERRO","Fila de Serviço vazia");
+        return;
+    } else {
+        ui->label->setText("Serviço de quarto realizado");
+        return;
+    }
 }
