@@ -28,8 +28,8 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     janelaprincipal.cpp \
+    palestra.cpp \
     quartos.cpp \
-    cardapio.cpp \
     registro.cpp \
     adm.cpp \
     servico.cpp \
@@ -41,8 +41,9 @@ HEADERS += \
     les.h \
         mainwindow.h \
     janelaprincipal.h \
+    palestra.h \
+    pilha.h \
     quartos.h \
-    cardapio.h \
     registro.h \
     adm.h \
     servico.h \
@@ -52,8 +53,8 @@ HEADERS += \
 FORMS += \
         mainwindow.ui \
     janelaprincipal.ui \
+    palestra.ui \
     quartos.ui \
-    cardapio.ui \
     registro.ui \
     adm.ui \
     servico.ui \

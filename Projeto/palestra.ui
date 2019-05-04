@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>JanelaPrincipal</class>
- <widget class="QDialog" name="JanelaPrincipal">
+ <class>Cardapio</class>
+ <widget class="QDialog" name="Cardapio">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -16,53 +16,63 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>120</y>
-     <width>141</width>
+     <x>240</x>
+     <y>260</y>
+     <width>75</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Quartos</string>
+    <string>Voltar</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>60</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>160</y>
-     <width>141</width>
+     <y>20</y>
+     <width>121</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Cardápio</string>
+    <string>Mostrar Lugares</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>240</y>
-     <width>141</width>
+     <x>60</x>
+     <y>260</y>
+     <width>91</width>
      <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Sair</string>
+    <string>Preencher Lugar</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>200</y>
-     <width>141</width>
-     <height>31</height>
+     <x>150</x>
+     <y>260</y>
+     <width>91</width>
+     <height>23</height>
     </rect>
    </property>
    <property name="text">
-    <string>Serviço de quarto</string>
+    <string>Liberar Lugar</string>
    </property>
   </widget>
  </widget>

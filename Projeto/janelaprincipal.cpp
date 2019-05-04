@@ -2,7 +2,7 @@
 #include "ui_janelaprincipal.h"
 #include "mainwindow.h"
 #include "quartos.h"
-#include "cardapio.h"
+#include "palestra.h"
 #include "servico.h"
 
 
@@ -32,9 +32,9 @@ void JanelaPrincipal::on_pushButton_clicked()
 
 void JanelaPrincipal::on_pushButton_2_clicked()
 {
-    Cardapio cardapio;
-    cardapio.setModal(true);
-    cardapio.exec();
+    Palestra Palestra;
+    Palestra.setModal(true);
+    Palestra.exec();
 }
 
 void JanelaPrincipal::on_pushButton_4_clicked()

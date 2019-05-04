@@ -3,6 +3,7 @@
 #include "mudarcardapio.h"
 #include "quartos.h"
 #include "servico.h"
+#include "palestra.h"
 
 adm::adm(QWidget *parent) :
     QDialog(parent),
@@ -40,4 +41,11 @@ void adm::on_pushButton_3_clicked()
     Servico servico;
     servico.setModal(true);
     servico.exec();
+}
+
+void adm::on_pushButton_5_clicked()
+{
+    Palestra palestra;
+    palestra.setModal(true);
+    palestra.exec();
 }
