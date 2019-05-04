@@ -36,6 +36,7 @@ SOURCES += \
     mudarcardapio.cpp
 
 HEADERS += \
+    fila.h \
     hash.h \
     les.h \
         mainwindow.h \

@@ -2,6 +2,9 @@
 #include "ui_mudarcardapio.h"
 #include <QMessageBox>
 
+// O PROGRAMA ESTA COM ERRO RELACIONADO AO QT APÓS ESTOURAR O LIMITE DOS SERVIÇOS E VOLTAR PARA ALTERAR CARDAPIO
+// PROGRAMA CRASHA SE TENTARMOS REALIZAR QUALQUER AÇÃO RELACIONADO AO CARDAPIO
+
 lde obj, *atual;
 mudarCardapio::mudarCardapio(QWidget *parent) :
     QDialog(parent),

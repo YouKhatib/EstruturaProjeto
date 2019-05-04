@@ -13,51 +13,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QComboBox" name="comboBox">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>10</y>
-     <width>131</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <item>
-    <property name="text">
-     <string>1 - Solteiro Comum</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>2 - Casal Comum</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>3 - Solteiro Duplo Comum</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>4 - Solteiro Master</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>5 - Casal Master</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>6 - Solteiro Duplo Master</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>7 - Suíte Presidencial</string>
-    </property>
-   </item>
-  </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
@@ -132,6 +87,51 @@
    <property name="text">
     <string>Realizar Check out</string>
    </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>1 - Solteiro Comum</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2 - Casal Comum</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3 - Solteiro Duplo Comum</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>4 - Solteiro Master</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>5 - Casal Master</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6 - Solteiro Duplo Master</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>7 - Suíte Presidencial</string>
+    </property>
+   </item>
   </widget>
  </widget>
  <resources/>
