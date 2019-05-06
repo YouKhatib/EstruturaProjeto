@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Cardapio</class>
- <widget class="QDialog" name="Cardapio">
+ <class>Palestra</class>
+ <widget class="QDialog" name="Palestra">
   <property name="geometry">
    <rect>
     <x>0</x>
